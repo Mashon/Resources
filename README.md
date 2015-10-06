@@ -17,11 +17,11 @@
 
 `countries = ["Denmark,", "Sweden,", "Germany,", "France,", "Spain,"]`  
 
-1)return "Germany" by using the `at` method    
-2)return "Germany" and "France" by using the `slice` method   
-3)return "Spain" using the `fetch` method (do this twice with two different arguments)  
-4)return the first two countries using the `take` method  
-5)remove "France" and "Spain" using the `drop` method  
+1) return "Germany" by using the `at` method    
+2) return "Germany" and "France" by using the `slice` method   
+3) return "Spain" using the `fetch` method (do this twice with two di fferent arguments)  
+4) return the first two countries using the `take` method  
+5) remove "France" and "Spain" using the `drop` method  
 
 
 #Objective - find the length of an array
