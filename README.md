@@ -1,4 +1,3 @@
-
 #Array Methods
 
 #Objective - create a new array
@@ -27,33 +26,33 @@
 
 #Objective - find the length of an array
 
-array = [2, 9, 5, 11, 10, 17, 14, 12, 16, 7, 4, 3, 6, 15, 1, 8, 13]
+`array = [2, 9, 5, 11, 10, 17, 14, 12, 16, 7, 4, 3, 6, 15, 1, 8, 13]`
 
 1) Find how many items are in the array using three different methods.  
 
 #Objectives - See if an array contains an item
 
-bestsellers = ["Come Rain or Come Shine", "Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]
+`bestsellers = ["Come Rain or Come Shine", "Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]`
 
 1) See if bestsellers includes the title "The Scam".
 
 
 #Objective - Delete an item from an array
 
-bestsellers = ["Come Rain or Come Shine", "Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]
+`bestsellers = ["Come Rain or Come Shine", "Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]`
 
 1) Use a method to delete the title "Come Rain or Come Shine" from bestsellers.
 
 
 #Objective - Add item to beginning of an array
 
-bestsellers = ["Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]
+`bestsellers = ["Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]`
 
 1) Use a method to add "Come Rain or Come Shine" back to its former spot at the top front of the bestsellers array.
 
 
 #Objective - Add an item into a specific place in an array.
-superbowl_champs = ["New England Patriots", "Seattle Seahawks", "Baltimore Ravens", "New York Giants", "New Orleans Saints", "Pittsburgh Steelers", "New York Giants", "Indianapolis Colts", "Pittsburgh Steelers"]
+`superbowl_champs = ["New England Patriots", "Seattle Seahawks", "Baltimore Ravens", "New York Giants", "New Orleans Saints", "Pittsburgh Steelers", "New York Giants", "Indianapolis Colts", "Pittsburgh Steelers"]`
 
 This array should contain the Superbowl winners for the last ten years. However, one team is missing! The Green Bay Packers won in 2011!
 
@@ -62,20 +61,20 @@ This array should contain the Superbowl winners for the last ten years. However,
 
 #Objective - Take the last item out of an array
 
-states_start_with_a = ["Alaska", "Arizona", "Arkansas", "Boca Raton"]
+`states_start_with_a = ["Alaska", "Arizona", "Arkansas", "Boca Raton"]`
 
 1) Looks like someone's geography is a little off! Leave off the last item "Boca Raton" from the array.
 
 #Objective - remove nil from array
 
-groceries = ["milk", "cheese", nil, "cookies", "bread", "chicken", nil]
+`groceries = ["milk", "cheese", nil, "cookies", "bread", "chicken", nil]`
 
 1)Your grocery list is doing some weird things and storing some nil values. Get rid of all nils on one fell swoop!
 
 
 #Objective - remove duplicate items from an array
 
-skills = ["HTML", "CSS", "Ruby", "Rails", "Ruby", "Javascript", "Ruby", "Rails", "Python", "Ruby", "jQuery", "Ruby", "Ruby", "Rails"]
+`skills = ["HTML", "CSS", "Ruby", "Rails", "Ruby", "Javascript", "Ruby", "Rails", "Python", "Ruby", "jQuery", "Ruby", "Ruby", "Rails"]`
 
 1) Your LinkedIn profile has taken on a mind of it's own and is apparently trying to emphazise your Ruby and Rails skills. Use a method to remove duplicate elements from the arrray.
 
@@ -85,6 +84,6 @@ skills = ["HTML", "CSS", "Ruby", "Rails", "Ruby", "Javascript", "Ruby", "Rails",
 
 #Objective - sort an array alphabetically
 
-my_symbols =[:g, :d, :e, :b, :c, :a, :f]
+`my_symbols =[:g, :d, :e, :b, :c, :a, :f]`
 
 1) Sort the array of symbols alphabetically.
