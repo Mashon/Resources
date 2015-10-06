@@ -3,7 +3,7 @@
 Use the Ruby Docs to find **methods** to solve each of these! Play around in irb and check your answers! 
 
 ###Objective - create a new array
-1) Set a = to an empty array. (Use two different ways.)  
+1) Set a = to an empty array. (Do this twice with two different methods.)  
 
 ###Objective - add items to array
 
