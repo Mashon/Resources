@@ -1,5 +1,7 @@
 #Array Methods
 
+Use the Ruby Docs to find **methods** to solve each of these! Play around in irb and check your answers! 
+
 ###Objective - create a new array
 1) Set a = to an empty array. (Use two different ways.)  
 
@@ -8,9 +10,9 @@
 1) Set `b = [1,2,3]`  
 2) Add `4,5,6` to the array using `<<`  
 3) Add `7,8,9` to the array using the `push` method  
-4) Add `10,11,12` to the array using the `(+)` operator  
+4) Add `[10,11,12]` to the array using the `(+)` operator  
 5) Check `b` to see what values it contains  
-6) Add `13,14,15` to b using the concat method  
+6) Add `13,14,15` to b using the `concat` method  
 
 
 ###Objective - return a specific item from an array
