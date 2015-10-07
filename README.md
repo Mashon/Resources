@@ -17,7 +17,7 @@ Use the Ruby Docs to find **methods** to solve each of these! I repeat! Use **me
 
 ###Objective - return a specific item from an array
 
-`countries = ["Denmark,", "Sweden,", "Germany,", "France,", "Spain,"]`  
+`countries = ["Denmark", "Sweden", "Germany", "France", "Spain"]`  
 
 1) return "Germany" by using the `at` method    
 2) return "Germany" and "France" by using the `slice` method   
