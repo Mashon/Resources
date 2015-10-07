@@ -82,7 +82,7 @@ This array should contain the Superbowl winners for the last ten years. However,
 
 ###Objective - return a random item from an array
 
-1) Set the variable `my_name` equal to the string `your first name`. Use the split method, (learned in Strings), to convert your name into an array. Return a random number from the array.
+1) Set the variable `my_name` equal to the string `your first name`. Use the split method, (learned in Strings), to convert your name into an array. Find and use a method to return a random letter from the array.
 
 ###Objective - sort an array alphabetically
 
