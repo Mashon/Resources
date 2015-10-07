@@ -1,6 +1,6 @@
 #Array Methods
 
-Use the Ruby Docs to find **methods** to solve each of these! Play around in irb and check your answers! 
+Use the Ruby Docs to find **methods** to solve each of these! I repeat! Use **methods** to accomplish these. You should not needs loops. Don't over think things. Exlore the Ruby docs to come up with your answers. Play around in irb and check your answers! 
 
 ###Objective - create a new array
 1) Set a = to an empty array. (Do this twice with two different methods.)  
@@ -21,7 +21,7 @@ Use the Ruby Docs to find **methods** to solve each of these! Play around in irb
 
 1) return "Germany" by using the `at` method    
 2) return "Germany" and "France" by using the `slice` method   
-3) return "Spain" using the `fetch` method (do this twice with two di fferent arguments)  
+3) return "Spain" using the `fetch` method (do this twice with two different arguments)  
 4) return the first two countries using the `take` method  
 5) remove "France" and "Spain" using the `drop` method  
 
@@ -30,27 +30,27 @@ Use the Ruby Docs to find **methods** to solve each of these! Play around in irb
 
 `array = [2, 9, 5, 11, 10, 17, 14, 12, 16, 7, 4, 3, 6, 15, 1, 8, 13]`  
 
-1) Find how many items are in the array using three different methods.  
+1) Find how many items are in the array using three **different** methods.  
 
 ###Objectives - See if an array contains an item
 
 `bestsellers = ["Come Rain or Come Shine", "Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]`
 
-1) See if bestsellers includes the title "The Scam".  
+1) See if `bestsellers` includes the title "The Scam".  
 
 
 ###Objective - Delete an item from an array
 
 `bestsellers = ["Come Rain or Come Shine", "Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]`  
 
-1) Use a method to delete the title "Come Rain or Come Shine" from bestsellers.  
+1) Use a method to delete the **first** title "Come Rain or Come Shine" from bestsellers.  
 
 
 ###Objective - Add item to beginning of an array
 
 `bestsellers = ["Make Me", "The Girl in the Spider's Web", "Go Set a Watchman", "All the Light We Cannot See", "The Girl on the Train", "X", "Fates and Furies", "Purity", "Devoted in Death"]`  
 
-1) Use a method to add "Come Rain or Come Shine" back to its former spot at the top front of the bestsellers array.
+1) Use a method to add "Come Rain or Come Shine" back to its former spot at the front of the bestsellers array.
 
 
 ###Objective - Add an item into a specific place in an array.
