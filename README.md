@@ -1,6 +1,6 @@
 #Array Methods
 
-Use the Ruby Docs to find **methods** to solve each of these! I repeat! Use **methods** to accomplish these. You should not needs loops. Don't over think things. Exlore the Ruby docs to come up with your answers. Play around in irb and check your answers! 
+Use the Ruby Docs to find **methods** to solve each of these! I repeat! Use **methods** to accomplish these. You should not need loops. Don't over think things. Exlore the Ruby Docs to come up with your answers. Play around in irb and check your answers! 
 
 ###Objective - create a new array
 1) Set a = to an empty array. (Do this twice with two different methods.)  
