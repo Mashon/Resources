@@ -30,6 +30,7 @@ end
 
 car_color("green")
 ```
+**Don't forget to experiment with calling the method with different arguments!**
 
 #####2) On the highway its important to maintain a safe speed! Write a boolean expression to let the driver know they are doing a good job if `speed` is _greater than or equal to 40_ AND _less than or equal to 60_.
 
@@ -45,6 +46,7 @@ end
 
 car_speed(35)
 ```
+**Don't forget to experiment with calling the method with different arguments!**
 
 #####3) Jane is very particular about making sure to alternate her comfy shoes with heels. Write a boolean expression to output the first message if the `day_of_week` is Monday _or_ Wednesday _or_ Friday.
 ```ruby
@@ -58,6 +60,7 @@ end
 
 comfy_shoes("Friday")
 ```
+**Don't forget to experiment with calling the method with different arguments!**
 
 #####4) Lets try this another way. Write a boolean expression to let Jane know what she should do if `day_of_week` is _not_ "Monday" _or_ "Wednesday" _or_ "Friday"
 ```ruby
@@ -71,6 +74,7 @@ end
 
 comfy_shoes2("Sunday")
 ```
+**Don't forget to experiment with calling the method with different arguments!**
 
 #####5) You work the front desk and a new guy named Alan is supposed to be starting today. Write a boolean expression to represent the following: if their name _is not_ Alan, greet them as usual but if their name is Alan, extend a warm welcome.
 ```ruby
@@ -84,6 +88,7 @@ end
 
 new_guy("Alan")
 ```
+**Don't forget to experiment with calling the method with different arguments!**
 
 #####6) Cats are notoriously finicky! (Gotta love 'em though!). Write a boolean expression to show that if `fed` is "true" _and_ `has_toy` is "true", grumpy_cat is actually happy.
 
@@ -99,6 +104,7 @@ end
 
 grumpy_cat("true", "true")
 ```
+**Don't forget to experiment with calling the method with different arguments!**
 
 #####7) Mondays are typically not fun and they're even worse without coffee! Write a boolean expression that shows that if `begin_week` is "Monday" **and** `coffee` is _not_ "true", your coworkers better be careful!
 
