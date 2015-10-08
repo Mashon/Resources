@@ -62,21 +62,9 @@ comfy_shoes("Friday")
 ```
 **Don't forget to experiment with calling the method with different arguments!**
 
-#####4) Lets try this another way. Write a boolean expression to let Jane know what she should do if `day_of_week` is _not_ "Monday" _or_ "Wednesday" _or_ "Friday"
-```ruby
-def comfy_shoes2(day_of_week)
-  if **YOUR CODE GOES HERE**
-    puts "Try to stay off your feet as much as possible and you'll be fine!"
-  else
-    puts "Don't you love comfy shoes day!"
-  end
-end
 
-comfy_shoes2("Sunday")
-```
-**Don't forget to experiment with calling the method with different arguments!**
 
-#####5) You work the front desk and a new guy named Alan is supposed to be starting today. Write a boolean expression to represent the following: if their name _is not_ Alan, greet them as usual but if their name is Alan, extend a warm welcome.
+#####4) You work the front desk and a new guy named Alan is supposed to be starting today. Write a boolean expression to represent the following: if their name _is not_ Alan, greet them as usual but if their name is Alan, extend a warm welcome.
 ```ruby
 def new_guy(name)
   if **YOUR CODE GOES HERE**
@@ -90,7 +78,7 @@ new_guy("Alan")
 ```
 **Don't forget to experiment with calling the method with different arguments!**
 
-#####6) Cats are notoriously finicky! (Gotta love 'em though!). Write a boolean expression to show that if `fed` is "true" _and_ `has_toy` is "true", grumpy_cat is actually happy.
+#####5) Cats are notoriously finicky! (Gotta love 'em though!). Write a boolean expression to show that if `fed` is "true" _and_ `has_toy` is "true", grumpy_cat is actually happy.
 
 ```ruby
 def grumpy_cat(fed,has_toy)
@@ -106,7 +94,7 @@ grumpy_cat("true", "true")
 ```
 **Don't forget to experiment with calling the method with different arguments!**
 
-#####7) Mondays are typically not fun and they're even worse without coffee! Write a boolean expression that shows that if `begin_week` is "Monday" **and** `coffee` is _not_ "true", your coworkers better be careful!
+#####6) Mondays are typically not fun and they're even worse without coffee! Write a boolean expression that shows that if `begin_week` is "Monday" **and** `coffee` is _not_ "true", your coworkers better be careful!
 
 ```ruby
 def grumpy_human(begin_week, coffee)
@@ -119,3 +107,18 @@ end
 
 grumpy_human("Monday", "true")
 ```
+
+
+#####BONUS Lets try comfy shoes another way. Write a boolean expression to let Jane know what she should do if `day_of_week` is _not_ "Monday" _or_ "Wednesday" _or_ "Friday". Check your results. They should be a little surprising! See if you can understand why this result is occuring.
+```ruby
+def comfy_shoes2(day_of_week)
+  if **YOUR CODE GOES HERE**
+    puts "Try to stay off your feet as much as possible and you'll be fine!"
+  else
+    puts "Don't you love comfy shoes day!"
+  end
+end
+
+comfy_shoes2("Sunday")
+```
+**Don't forget to experiment with calling the method with different arguments!**
