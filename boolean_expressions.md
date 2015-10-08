@@ -1,4 +1,4 @@
-#Boolean Expressions
+#Boolean Expressions  
 
 Here is some additional practice for writing booleans. You will also get some practice working with methods. We have not specifically covered methods yet but you should have a feel for them due to your prework. In each question, the method has already been written for you, all you need to add is the logic. Once you've written the logic don't forget to call the method with various arguments to make sure your logic is correct.
 
@@ -14,7 +14,7 @@ end
 
 weather("sunny")
 ```
-Try calling the method above again with "blue sky" or "rainy" or "cloudy".
+Try calling the method above again with "blue sky" or "rainy" or "cloudy".  
 
 
 #####1) Red and black are very popular car colors. Write a boolean expression to see if `color` is "red" _OR_ "black".
