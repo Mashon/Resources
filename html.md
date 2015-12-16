@@ -17,8 +17,6 @@ Place the links to those stylesheets in the head section of your html.
 
 Remember that the stylesheets are read from top to bottom so we want the `normalize.css` file to be read first. This ensurest that it is resetting our webpage to display the same across all browsers.  Then our additional styling will be read from the `mystyle.css` file.
 
-From the link [here](https://necolas.github.io/normalize.css/) download the normalize file and copy in the normalize.css stylesheet.
-
 Now, were ready to get started laying out the structure of our html page.  
 
 We know that we need a header and footer so we can go ahead and create those elements:
@@ -157,3 +155,71 @@ Notice that because the icon is what we want to display for the link, it is nest
 Add two more icons linking to Facebook and Instagram.
 
 *********************************************************************************** 
+###CSS
+
+
+From the link [here](https://necolas.github.io/normalize.css/) download the normalize file and copy its contents into the normalize.css stylesheet we created earlier.
+
+Open the `mystyle.css` document and lets get started.
+
+First, its important to be organized so we want to create sections that correspond with each section of our html that we'll be styling.
+
+We have the following sections:
+* header
+* title div
+* main article section
+* events section
+* footer
+
+So these are enough to start with. You can add more sections later if you wish. Its important to start with some type of organizational structure in the beginning and you can always modify this later as you develop your own sense of organization.
+
+Place the following code in `mystyle.css`.
+
+```html
+/*----------------------------------------*/
+/*-----------------HEADER-----------------*/
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*---------------TITLE DIV----------------*/
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*--------MAIN ARTICLE SECTION-----------*/
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*-------------EVENTS SECTION-------------*/
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/*-----------------FOOTER-----------------*/
+/*----------------------------------------*/
+```
+These comments will help you stay organized as you begin to manipulate different elements on the page.
+
+With these done there are couple of other things we should do at the beginning of any project. These are some default values that are often a good idea but not mandatory. As you continue to create projects you'll develop a feel for what things you'll typically want to use.
+
+Place the code below at the top of your stylesheet above the comments.
+
+```css  
+html {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+```
+ 
+ The `html` selector sets all items in your html to default to border-box sizing. This means that content, margin and padding are all included inside an elements width automatically.  See lecture notes and/or [W3CSchools](http://www.w3schools.com/css/css3_box-sizing.asp) for more information.
+ 
+The `li` selectore sets all of your list items to *not* have bullet points. Typically when designing you rarely use lists as actual bullet point lists so this sets the default behavior to exist without the bullets. This is set at the top so you can override it later on in the page if you find yourself needing a "typical" list.
+
+The `a` selector sets all links ot not be underlined. (Soooooo 90's!)
+
+
