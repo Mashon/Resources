@@ -319,7 +319,7 @@ a {
 }
 
 li {
-list-style-type:none;
+  list-style-type:none;
 }
 ```
 
