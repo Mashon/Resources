@@ -123,6 +123,7 @@ In order for the text below each iamge to be "attached" below it, it would make 
 
 ```html
     <div class="each_event">
+        <h5>Event 1</h5>
         <img src="http://placehold.it/350x150"/>
         <p>Echo park kogi thundercats, vice vinyl sustainable 3 wolf moon plaid cornhole marfa 90's helvetica migas humblebrag. Next          level wolf +1 umami.</p>
     </div>
@@ -222,4 +223,89 @@ The `li` selectore sets all of your list items to *not* have bullet points. Typi
 
 The `a` selector sets all links ot not be underlined. (Soooooo 90's!)
 
+Now that we have those basics out of the way...
+
+The header needs to be a different color:
+
+```css
+nav {
+  background-color: teal;
+}
+
+a {
+  color:white;
+}
+
+a:hover {
+  color:lightgrey;
+}
+
+ul {
+  margin:0;
+  padding:0;
+  display: flex;
+
+}
+```
+Many elements like `ul`'s have default settings for margin and padding. Here we are setting those to 0 as a base that we can then work from to create our own settings.
+
+Setting the display to flex defaults the flex-direction to row. In this case we want our links to be displayed horizontally so that works great.
+
+Lets add a few more tweaks so that the css file now looks like this:
+```css
+nav {
+  background-color: teal;
+}
+
+a {
+  color:white;
+  font-size: 2em;
+}
+
+ul {
+  margin:0;
+  padding:0;
+  display: flex;
+}
+
+li {
+  padding: 15px;
+}
+```
+
+The title of the page "December" should be centered.
+
+.month_title {
+  display:flex;
+  justify-content: center;
+}
+
+The main article is right up against the edge of the page so adding padding will format that properly.
+
+```css
+.main-article {
+  padding: 20px;
+}
+```
+
+In the events section we want the text to fit neatly below the images they are referencing and the images should fill the whole width of the screen.
+
+To do this we'll set `each-event` to be a container and set the elements inside it to be stacked in a column instead of the default row direction.
+
+```css
+.each_event {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+```
+
+Finally we can stretch the images to take up the entire width of the screen.
+
+```css
+
+.img {
+  width:100%;
+}
+```
 
