@@ -30,4 +30,46 @@ We know that we need a header and footer so we can go ahead and create those ele
 <footer>
 </footer>
 ```
+I need a title on my page so I'll go ahead and create one between the header and footer elements.
 
+```html
+<div class="month_title">
+<h1>December</h1>
+<div>
+```
+
+I'll also need content to go in the main body of the newsletter so i'll include that below the title using a <section> tag.
+
+```html
+<section class="main-article">
+</section>
+```
+I want a space for events as well so those will go inside another section.
+```html
+<section class="events">
+</section>
+```
+My entire body section now looks like this:
+
+```html
+  <body>
+    <header>
+    </header>
+
+    <div class="month_title">
+    <h1>December</h1>
+    <div>
+
+    <section class="main-article">
+    </section>
+
+    <section class="events">
+    </section>
+
+    <footer>
+    </footer>
+      
+  </body>
+  ```
+  
+  
