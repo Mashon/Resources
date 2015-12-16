@@ -311,3 +311,15 @@ Finally we can stretch the images to take up the entire width of the screen.
 }
 ```
 
+
+
+```css
+a {
+  text-decoration: none;
+}
+
+li {
+list-style-type:none;
+}
+```
+
