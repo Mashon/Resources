@@ -1,11 +1,14 @@
-Create a folder to store your html and css files in.  
+### Mobile First Design
+
+Create a folder in your projects directory to store your html and css files in.  
 
 Create `homepage.html` and open in atom.  
 
 In atom type `html<tab>` and it should auto fill the Doctype information at the top.    
 
-Give the webpage a title: Newsletter  
-
+Include the meta information for the viewport just below the existing '<meta charset="utf-8">' tag.
+<meta name="viewport" content="width=device-width, initial-scale=1">
+Give the webpage a title: *Newsletter*  
 
 Create two new files: `mstyle.css` and `normalize.css`.  
 Place the links to those stylesheets in the head section of your html.  
@@ -82,14 +85,14 @@ Place the following code inside the header tags.
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Past Issues</a></li>
+          <li><a href="#">Issues</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
 ```
 
 `<nav></nav>` tags are used to define sections that will contain main navigation links for a site.  
-Links are typically stored in unordered lists. The <ul></ul> tags delineate the start end of a list and the <li></li> tags showthe beginning and end of each item in that list.  
+Links are typically stored in unordered lists. The <ul></ul> tags delineate the start end of a list and the <li></li> tags show the beginning and end of each item in that list.  
 
 Links themselves begin and end with <a></a> tags and are *nested inside* the <li></li> tags. Remember, nested tags must be closed in order!  
 
