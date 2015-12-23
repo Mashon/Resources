@@ -387,4 +387,4 @@ And just like that...
 
 We have a simple responsive site built with HTML and CSS and looks great on mobile and desktop. No templates or frameworks, just good old fashioned design principles. 
 
-With this simple foundation you're now prepared to go on and build more complicated structures from scratch or add in frameworks as needed. Happy coding!
+With this simple foundation you're now prepared to go on and build more complicated structures from scratch or add in frameworks as needed. Happy coding!!!
