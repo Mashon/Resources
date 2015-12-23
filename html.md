@@ -36,14 +36,14 @@ I need a title on my page so I'll go ahead and create one between the header and
 ```html
 <div class="month_title">
 <h1>December</h1>
-<div>
+</div>
 ```
 
-I'll also need content to go in the main body of the newsletter so i'll include that below the title using a `<section></section` tag.  
+I'll also need content to go in the main body of the newsletter so i'll include that below the title using a `<article></article>` tag. An article tag is a separator like a div but it gives more details and semantically is more correct.
 
 ```html
-<section class="main-article">
-</section>
+<article class="main-article">
+</article>
 ```
 I want a space for events as well so those will go inside another section.  
 ```html
@@ -61,8 +61,8 @@ My entire body section now looks like this:
     <h1>December</h1>
     <div>
 
-    <section class="main-article">
-    </section>
+    <article class="main-article">
+    </article>
 
     <section class="events">
     </section>
@@ -105,7 +105,7 @@ We have a title set up for the main page, "December" but we're also going to nee
   </section>
 ```
 
-We also need some content so lets add some <p></p> tags.  
+We also need some content so lets add some `<p></p>` tags.  
 
 ```html
  <section class="main-article">
@@ -122,7 +122,7 @@ Grap some filler [text](www.hipsum.co) and place it in the paragraph tags.
 
 The next section contains events and for each event we want to have an image with some text below it.  
 
-In order for the text below each image to be "attached" below it, it would make sense that these two things are attached. To do this we can place in the same container div.  
+In order for the text to desplay below each image, it would make sense that they are "attached" below it. To do this we can place in the same container div.  
 
 ```html
     <div class="each_event">
@@ -142,11 +142,11 @@ Thats enough in our body for now so lets go ahead and finish out our layout with
 
 Our footer is going to contain the same navigation links as our header and some social media links.  
 
-First, put the same information in the <nav></nav> links in the header into the footer section.  
+First, put the same information in the `<nav></nav>` links in the header into the footer section.  
 
 Now we'll add social media icons from [Font Awesome](https://fortawesome.github.io/Font-Awesome/). There are over 600 free icons which act just like fonts so you can change their color or size using the same css you would use to change text.  
 
-In the getting started section of the site follow the steps in the *EASIEST: BootstrapCDN by MaxCDN* section. ??? Make sure to place the link *above* your other stylesheets ???? <<check this>>
+In the getting started section of the site follow the steps in the *EASIEST: BootstrapCDN by MaxCDN* section. Place the link in the head of your 
 
 Now lets add the twitter icon and link it to Twitter. Add the code below right under your "Contact" link.  
 
@@ -160,7 +160,6 @@ Add two more icons linking to Facebook and Instagram.
 
 *********************************************************************************** 
 ###CSS
-
 
 From the link [here](https://necolas.github.io/normalize.css/) download the normalize file and copy its contents into the normalize.css stylesheet we created earlier.  
 
@@ -179,7 +178,7 @@ These are enough to start with. You can add more sections later if you wish. Its
 
 Place the following code in `mystyle.css`.  
 
-```html
+```css
 /*----------------------------------------*/
 /*-----------------HEADER-----------------*/
 /*----------------------------------------*/
@@ -231,11 +230,15 @@ Now that we have those basics out of the way...
 Let's start by styling the header.  
 
 ```css
-nav {
+/*----------------------------------------*/
+/*-----------------HEADER-----------------*/
+/*----------------------------------------*/
+
+header {
   background-color: teal;
 }
 
-a {
+a, a:visited {
   color:white;
 }
 
@@ -247,55 +250,67 @@ ul {
   margin:0;
   padding:0;
   display: flex;
-
 }
 ```
+It's pretty commont to give links a different color when they are hovered over. You also want to remember to set the clicked color or it may default to something you weren't planning on. 
+
 Many elements like `ul`'s have default settings for margin and padding. Here we are setting those to 0 as a base that we can then work from to create our own settings.  
 
 Setting the display to flex makes the ul a container. Its items will default to being set at flex-direction:row (or horizontal). In this case we want our links to be displayed horizontally so that works great and we don't have to do anything more.  
 
-Lets set some space between our list elements so that the css file now looks like this:  
+Lets set some space between our list elements with this css below the `<ul></ul>`:  
 ```css
-nav {
-  background-color: teal;
-}
-
-a {
-  color:white;
-  font-size: 2em;
-}
-
-ul {
-  margin:0;
-  padding:0;
-  display: flex;
-}
-
 li {
-  padding: 15px;
+  padding: 10px;
 }
 ```
 
-The title of the page "December" should be centered.  
+The title of the page "December" should be centered.  The title is an h1 inside of a div. To move it to the middle we just need to make the outer div a container with `display: flex;` and then center the item(the header) inside of it.
 ```css
+/*----------------------------------------*/
+/*---------------TITLE DIV----------------*/
+/*----------------------------------------*/
+
 .month_title {
   display:flex;
   justify-content: center;
 }
 ```
-
-
-The main article is right up against the edge of the page so adding padding will format that properly.  
+There's some extra whitespace we don't need below the `<h1></h1>` so we can remove that.
 
 ```css
+.month_title h1 {
+  margin-bottom: 0;
+}
+```
+That works. Now we need to style the main article a little bit. The main article is right up against the edge of the page so adding padding will format that properly.  
+
+```css
+/*----------------------------------------*/
+/*--------MAIN ARTICLE SECTION-----------*/
+/*----------------------------------------*/
 .main-article {
-  padding: 20px;
+  padding: 0 20px 0 2px;
 }
 ```
 
-In the events section we want the text to fit neatly below the images they are referencing and the images should fill the whole width of the screen.  
+In the events section we want each event to be displayed stacked on top of each other on a mobile device. The event title should be on top, the text should fit neatly below the images they are referencing and the images should fill the whole width of the screen.  
 
-To do this we'll set `each-event` to be a container and set the elements inside it to be stacked in a column instead of the default row direction.  
+
+To do this we'll first set up our parent container. The section with the class of `events` will contain all of the smaller event elements inside of it. We need to get started by setting it to `display: flex`. 
+
+```css
+/*----------------------------------------*/
+/*-------------EVENTS SECTION-------------*/
+/*----------------------------------------*/
+.events {
+  display:flex;
+  flex-direction: column;
+}
+```
+We want each of the smaller events to line up below each other inside of this rectangle. The default direction is row so we can set it instead to column for mobile. 
+
+We will also set `each-event` to be a container and set the elements inside it to be stacked in a column instead of the default row direction. This can later be switched back to row with a media query when we are redesigning for desktop.
 
 ```css
 .each_event {
@@ -309,20 +324,67 @@ Finally we can stretch the images to take up the entire width of the screen.
 
 ```css
 
-.img {
+.each_event img {
   width:100%;
+  height: auto;
 }
 ```
 
+Ok, this looks great! On an iPhone 4 anyway.
 
+Now there are a myriad of sizes between an iPhone 4 and a desktop but for the sake of this lesson we're only going to look at adapting our mobile design for a desktop...
+
+Lets place our media query at the bottom of all the current css we've written. Remember, we do this so that we inherit all the css we've written and only override the things we need to change. Here we're setting the media query to take effect on screen (as opposed to a print or other layout) and when the device is at least 1200px wide.
+```css
+@media only screen and (min-width : 1200px) {
+
+}
+```
+
+It may help to organize your media query according to the same layout used in the body of the main design of your site. This will ensure that you look at each section and adapt it accordingly.
 
 ```css
-a {
-  text-decoration: none;
-}
+@media only screen and (min-width : 1200px) {
+  /*-----------------HEADER-----------------*/
 
-li {
-  list-style-type:none;
+  /*---------------TITLE DIV----------------*/
+
+  /*--------MAIN ARTICLE SECTION-----------*/
+
+  /*-------------EVENTS SECTION-------------*/
+
+  /*-----------------FOOTER-----------------*/
+
 }
 ```
 
+With this setup I can scan each section. I can quickly see that I don't really need any changes in the first three sections so i'll quickly throw comments in to remind me that I've looked at these and decided they don't need any work.
+
+```css
+  /*-----------------HEADER-----------------*/
+  /* no changes */
+  /*---------------TITLE DIV----------------*/
+  /* no changes */
+  /*--------MAIN ARTICLE SECTION-----------*/
+  /* no changes */
+  /*-------------EVENTS SECTION-------------*/
+  
+  /*-----------------FOOTER-----------------*/
+
+```
+
+Now I can focus on a section where I do need a change, the events section. These events look massive and weird stacked on top of each other. They are intended to be small sections so I want to display them next to each other. 
+
+The section with the class of `.events` should be a rectangle container as we discussed earlier and each of the events should line up inside of it. For mobile they were stacked but on a desktop they should line up next to each other.
+
+I'll modify the `.events` class to have a flex direction of row. I'll check my design and... wow that was really easy! 
+
+If I resize the screen a little I can see that any smaller than 1200px and it reverts back to the events being stacked. Pretty cool but looks weird. Lets go ahead and design for a few smaller devices. Without going super in depth lets just say that on an iPad sized device I want the images in rows but for anything smaller stacking is cool.
+
+Using the dev tools, I can see that an iPad is 768px wide in portrait mode so I'll go ahead and modify the media query to be for devices _at least_ that width.
+
+And just like that...
+
+We have a simple responsive site built with HTML and CSS and looks great on mobile and desktop. No templates or frameworks, just good old fashioned design principles. 
+
+With this simple foundation you're now prepared to go on and build more complicated structures from scratch or add in frameworks as needed. Happy coding!
